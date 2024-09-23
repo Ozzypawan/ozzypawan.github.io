@@ -22,7 +22,7 @@ This is a personal portfolio website showcasing the work and skills of Pawan Raj
 - **Icons:** FontAwesome for social media icons
 
 ## Setup
-1. Clone the repository: `git clone https://github.com/yourusername/portfolio.git`
+1. Clone the repository: `git clone https://github.com/ozzypawan/portfolio.git`
 2. Open the project in your preferred code editor.
 3. Open `index.html` in your browser to view the site.
 
