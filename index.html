@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pawan Raj Pandey - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="./favicon.png" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Pawan Raj Pandey</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- Move dark mode toggle here -->
+    <div class="dark-mode-toggle">
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">Dark Mode</span>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Pawan Raj Pandey</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section-pic-container">
+      <img src="./assets/profile-pic.png" alt="Pawan Raj Pandey profile picture" />
+    </div>
+    <div class="section-text">
+      <p class="greeting">Hello, I'm</p>
+      <h1 class="animated-title">Pawan Raj Pandey</h1>
+      <p class="role">Backend Web Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/myCV.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/pawan-r-6bb81422b/', '_blank');" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/Ozzypawan', '_blank');" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section-text-p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>Backend Developer <br />Ayata Incorporation</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>Bsc.CSIT<br />St. Lawrence College (2019 - 2024)</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          I am a junior backend web developer skilled in Python, Django, and REST APIs. Currently, I am expanding my skills as a backend developer at Ayata Incorporation, where I contribute to the development of scalable web applications, emphasizing performance, efficiency, and innovation. I am proficient in version control using Git and GitHub, allowing me to manage code effectively and collaborate seamlessly with other developers. I thrive in team-oriented environments, bringing enthusiasm and a problem-solving mindset to every project. I completed my BSc. CSIT in 2024, which provided me with a solid foundation in computer science, programming, and web development.      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  
+
+  <section id="experience">
+    <p class="section-text-p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>REST APIs</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Other Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git & GitHub</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ORM</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML & CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section-text-p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <!-- Project 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Attendance Management System" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Attendance Management System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Attendance-Management-System', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Attendance-Management-System', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+  
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Hotel Management System" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Hotel Management System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Hotel-Management-System', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Hotel-Management-System', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+  
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Todolist" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Todolist</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Todolist', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Ozzypawan/Todolist', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  
+
+  <section id="contact">
+    <p class="section-text-p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:pawanpandey1251@gmail.com">Email Me</a>
+        </p>  
+      </div>      
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/pawan-r-6bb81422b/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/twitter.png" alt="Twitter icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.twitter.com/ozzypawan" target="_blank">Twitter</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/instagram.png" alt="Instagram icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.instagram.com/ozzy_is.here/" target="_blank">Instagram</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+        <p>
+          <a href="https://github.com/ozzypawan" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/discord.png" alt="Discord icon" class="icon contact-icon" />
+        <p>
+          <a href="https://discord.com/ozzy_ozzy" target="_blank">Discord</a>
+        </p>
+      </div>      
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Pawan Raj Pandey. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
